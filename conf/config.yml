@@ -1,0 +1,24 @@
+default:
+  db_name      : "my_db"
+  host         : "127.0.0.1"
+  port         : "5432"
+  user         : "vagrant" 
+  password     : "vagrant"
+  schema       : "data_bddm"
+  schema_stage : "data_stage"
+  trials       : 5
+  dataset      : "data-sampled.csv"
+  cores        : 2
+  debug        : true
+  server       : "localhost:5555"
+
+test:
+  trials       : 30
+  dataset      : "data-test.csv"
+
+production:
+  inherits    : test
+  dataset     : "data.csv"
+  #cores       : !expr getOption("mc.cores")
+  #debug       : !expr Sys.getenv("ENABLE_DEBUG") == "1"
+  #server      : !expr config::get("server", file = "/etc/server-config.yml")
