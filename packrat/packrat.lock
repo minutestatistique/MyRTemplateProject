@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.8.1
-RVersion: 3.1.2
+RVersion: 3.3.3
 Repos: CRAN=https://cran.rstudio.com
 
 Package: DBI
@@ -11,6 +11,7 @@ Hash: 096699d1ac1cf530acfc646a0c90ee5d
 Package: config
 Source: CRAN
 Version: 0.2
+Hash: 2628a077c5abec280d9c3e8fd63edbe1
 Requires: yaml
 
 Package: crayon
